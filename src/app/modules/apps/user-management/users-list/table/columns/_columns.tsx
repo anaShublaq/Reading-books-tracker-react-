@@ -1,56 +1,56 @@
 // @ts-nocheck
 import {Column} from 'react-table'
-import {UserInfoCell} from './UserInfoCell'
+import {BookInfoCell} from './BookInfoCell'
 import {UserLastLoginCell} from './UserLastLoginCell'
-import {UserTwoStepsCell} from './UserTwoStepsCell'
-import {UserActionsCell} from './UserActionsCell'
+import {BookTwoStepsCell} from './BookTwoStepsCell'
+import {BookActionsCell} from './BookActionsCell'
 import {UserSelectionCell} from './UserSelectionCell'
-import {UserCustomHeader} from './UserCustomHeader'
+import {BookCustomHeader} from './BookCustomHeader'
 import {UserSelectionHeader} from './UserSelectionHeader'
-import {User} from '../../core/_models'
+import {Book} from '../../core/_models'
 
-const usersColumns: ReadonlyArray<Column<User>> = [
+const BooksColumns: ReadonlyArray<Column<Book>> = [
   {
     Header: (props) => <UserSelectionHeader tableProps={props} />,
     id: 'selection',
     Cell: ({...props}) => <UserSelectionCell id={props.data[props.row.index].id} />,
   },
   {
-    Header: (props) => <UserCustomHeader tableProps={props} title='Name' className='min-w-125px' />,
+    Header: (props) => <BookCustomHeader tableProps={props} title='Name' className='min-w-125px' />,
     id: 'name',
-    Cell: ({...props}) => <UserInfoCell user={props.data[props.row.index]} />,
+    Cell: ({...props}) => <BookInfoCell Book={props.data[props.row.index]} />,
   },
   {
-    Header: (props) => <UserCustomHeader tableProps={props} title='Role' className='min-w-125px' />,
-    accessor: 'role',
+    Header: (props) => <BookCustomHeader tableProps={props} title='Author' className='min-w-125px' />,
+    accessor: 'author',
   },
   {
     Header: (props) => (
-      <UserCustomHeader tableProps={props} title='Last login' className='min-w-125px' />
+      <BookCustomHeader tableProps={props} title='version number' className='min-w-125px' />
     ),
-    id: 'last_login',
+    id: 'version_number',
     Cell: ({...props}) => <UserLastLoginCell last_login={props.data[props.row.index].last_login} />,
   },
   {
     Header: (props) => (
-      <UserCustomHeader tableProps={props} title='Two steps' className='min-w-125px' />
+      <BookCustomHeader tableProps={props} title='category' className='min-w-125px' />
     ),
-    id: 'two_steps',
-    Cell: ({...props}) => <UserTwoStepsCell two_steps={props.data[props.row.index].two_steps} />,
+    id: 'category',
+    Cell: ({...props}) => <BookTwoStepsCell two_steps={props.data[props.row.index].two_steps} />,
   },
   {
     Header: (props) => (
-      <UserCustomHeader tableProps={props} title='Joined day' className='min-w-125px' />
+      <BookCustomHeader tableProps={props} title='number of pages' className='min-w-125px' />
     ),
-    accessor: 'joined_day',
+    accessor: 'number_of_pages',
   },
   {
     Header: (props) => (
-      <UserCustomHeader tableProps={props} title='Actions' className='text-end min-w-100px' />
+      <BookCustomHeader tableProps={props} title='Actions' className='text-end min-w-100px' />
     ),
     id: 'actions',
-    Cell: ({...props}) => <UserActionsCell id={props.data[props.row.index].id} />,
+    Cell: ({...props}) => <BookActionsCell id={props.data[props.row.index].id} />,
   },
 ]
 
-export {usersColumns}
+export {BooksColumns}

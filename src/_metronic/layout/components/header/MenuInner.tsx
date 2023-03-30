@@ -8,8 +8,8 @@ export function MenuInner() {
   const intl = useIntl()
   return (
     <>
-      <MenuItem title={intl.formatMessage({id: 'MENU.DASHBOARD'})} to='/dashboard' />
-      <MenuItem title='Layout Builder' to='/builder' />
+      <MenuItem title={intl.formatMessage({id: 'Home'})} to='/dashboard' />
+      {/*<MenuItem title='Layout Builder' to='/builder' />*/}
       <MenuInnerWithSub
         title='Crafted'
         to='/crafted'
@@ -121,15 +121,15 @@ export function MenuInner() {
         />
       </MenuInnerWithSub>
 
-      <MenuInnerWithSub
-        isMega={true}
-        title='Mega menu'
-        to='/mega-menu'
-        menuPlacement='bottom-start'
-        menuTrigger='click'
-      >
-        <MegaMenu />
-      </MenuInnerWithSub>
+      {/*<MenuInnerWithSub*/}
+      {/*  isMega={true}*/}
+      {/*  title='Mega menu'*/}
+      {/*  to='/mega-menu'*/}
+      {/*  menuPlacement='bottom-start'*/}
+      {/*  menuTrigger='click'*/}
+      {/*>*/}
+      {/*  <MegaMenu />*/}
+      {/*</MenuInnerWithSub>*/}
     </>
   )
 }

@@ -10,19 +10,19 @@ const UsersListToolbar = () => {
 
   return (
     <div className='d-flex justify-content-end' data-kt-user-table-toolbar='base'>
-      <UsersListFilter />
+      {/*<UsersListFilter />*/}
 
       {/* begin::Export */}
-      <button type='button' className='btn btn-light-primary me-3'>
-        <KTSVG path='/media/icons/duotune/arrows/arr078.svg' className='svg-icon-2' />
-        Export
-      </button>
+      {/*<button type='button' className='btn btn-light-primary me-3'>*/}
+      {/*  <KTSVG path='/media/icons/duotune/arrows/arr078.svg' className='svg-icon-2' />*/}
+      {/*  Export*/}
+      {/*</button>*/}
       {/* end::Export */}
 
       {/* begin::Add user */}
       <button type='button' className='btn btn-primary' onClick={openAddUserModal}>
         <KTSVG path='/media/icons/duotune/arrows/arr075.svg' className='svg-icon-2' />
-        Add User
+        Add Book
       </button>
       {/* end::Add user */}
     </div>

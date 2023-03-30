@@ -1,27 +1,22 @@
 import {ID, Response} from '../../../../../../_metronic/helpers'
-export type User = {
-  id?: ID
-  name?: string
-  avatar?: string
-  email?: string
-  position?: string
-  role?: string
-  last_login?: string
-  two_steps?: boolean
-  joined_day?: string
-  online?: boolean
-  initials?: {
-    label: string
-    state: string
-  }
+
+export type Book = {
+    id?: ID
+    name?: string
+    avatar?: string
+    author?: string
+    version_number?: number
+    category?: string
+    number_of_pages?: number
 }
 
-export type UsersQueryResponse = Response<Array<User>>
+export type BooksQueryResponse = Response<Array<Book>>
 
-export const initialUser: User = {
-  avatar: 'avatars/300-6.jpg',
-  position: 'Art Director',
-  role: 'Administrator',
-  name: '',
-  email: '',
+export const initialBook: Book = {
+    name: '',
+    avatar: 'avatars/300-6.jpg',
+    author: 'Art Director',
+    version_number: 0,
+    category: '',
+    number_of_pages: 0,
 }

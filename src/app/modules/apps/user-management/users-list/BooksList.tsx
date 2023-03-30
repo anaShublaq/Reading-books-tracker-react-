@@ -2,19 +2,19 @@ import {ListViewProvider, useListView} from './core/ListViewProvider'
 import {QueryRequestProvider} from './core/QueryRequestProvider'
 import {QueryResponseProvider} from './core/QueryResponseProvider'
 import {UsersListHeader} from './components/header/UsersListHeader'
-import {UsersTable} from './table/UsersTable'
-import {UserEditModal} from './user-edit-modal/UserEditModal'
+import {BooksTable} from './table/UsersTable'
+import {BookEditModal} from './book-edit-modal/BookEditModal'
 import {KTCard} from '../../../../../_metronic/helpers'
 
-const UsersList = () => {
+const BooksList = () => {
   const {itemIdForUpdate} = useListView()
   return (
     <>
       <KTCard>
         <UsersListHeader />
-        <UsersTable />
+        <BooksTable />
       </KTCard>
-      {itemIdForUpdate !== undefined && <UserEditModal />}
+      {itemIdForUpdate !== undefined && <BookEditModal />}
     </>
   )
 }
@@ -23,7 +23,7 @@ const UsersListWrapper = () => (
   <QueryRequestProvider>
     <QueryResponseProvider>
       <ListViewProvider>
-        <UsersList />
+        <BooksList />
       </ListViewProvider>
     </QueryResponseProvider>
   </QueryRequestProvider>

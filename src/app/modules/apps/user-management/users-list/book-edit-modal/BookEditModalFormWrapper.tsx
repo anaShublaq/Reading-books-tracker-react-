@@ -1,10 +1,10 @@
 import {useQuery} from 'react-query'
-import {UserEditModalForm} from './UserEditModalForm'
+import {BookEditModalForm} from './BookEditModalForm'
 import {isNotEmpty, QUERIES} from '../../../../../../_metronic/helpers'
 import {useListView} from '../core/ListViewProvider'
-import {getUserById} from '../core/_requests'
+import {getBookById} from '../core/_requests'
 
-const UserEditModalFormWrapper = () => {
+const BookEditModalFormWrapper = () => {
   const {itemIdForUpdate, setItemIdForUpdate} = useListView()
   const enabledQuery: boolean = isNotEmpty(itemIdForUpdate)
   const {
@@ -14,7 +14,7 @@ const UserEditModalFormWrapper = () => {
   } = useQuery(
     `${QUERIES.USERS_LIST}-user-${itemIdForUpdate}`,
     () => {
-      return getUserById(itemIdForUpdate)
+      return getBookById(itemIdForUpdate)
     },
     {
       cacheTime: 0,
@@ -27,14 +27,14 @@ const UserEditModalFormWrapper = () => {
   )
 
   if (!itemIdForUpdate) {
-    return <UserEditModalForm isUserLoading={isLoading} user={{id: undefined}} />
+    return <BookEditModalForm isBookLoading={isLoading} Book={{id: undefined}} />
   }
 
   if (!isLoading && !error && user) {
-    return <UserEditModalForm isUserLoading={isLoading} user={user} />
+    return <BookEditModalForm isBookLoading={isLoading} Book={user} />
   }
 
   return null
 }
 
-export {UserEditModalFormWrapper}
+export {BookEditModalFormWrapper}

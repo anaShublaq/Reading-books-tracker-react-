@@ -9,8 +9,8 @@ import {Statistics} from './components/Statistics'
 
 const widgetsBreadCrumbs: Array<PageLink> = [
   {
-    title: 'Widgets',
-    path: '/crafted/widgets/charts',
+    title: 'Queries Page',
+    path: '/crafted/widgets/lists',
     isSeparator: false,
     isActive: false,
   },
@@ -48,7 +48,7 @@ const WidgetsPage = () => {
           path='lists'
           element={
             <>
-              <PageTitle breadcrumbs={widgetsBreadCrumbs}>Lists</PageTitle>
+              <PageTitle breadcrumbs={widgetsBreadCrumbs}>Queries</PageTitle>
               <Lists />
             </>
           }
@@ -66,7 +66,7 @@ const WidgetsPage = () => {
           path='tables'
           element={
             <>
-              <PageTitle breadcrumbs={widgetsBreadCrumbs}>Tables</PageTitle>
+              <PageTitle breadcrumbs={widgetsBreadCrumbs}>Categories</PageTitle>
               <Tables />
             </>
           }

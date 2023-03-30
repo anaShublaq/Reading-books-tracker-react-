@@ -5,13 +5,13 @@ import {MenuComponent} from '../../../../../../../_metronic/assets/ts/components
 import {ID, KTSVG, QUERIES} from '../../../../../../../_metronic/helpers'
 import {useListView} from '../../core/ListViewProvider'
 import {useQueryResponse} from '../../core/QueryResponseProvider'
-import {deleteUser} from '../../core/_requests'
+import {deleteBook} from '../../core/_requests'
 
 type Props = {
   id: ID
 }
 
-const UserActionsCell: FC<Props> = ({id}) => {
+const BookActionsCell: FC<Props> = ({id}) => {
   const {setItemIdForUpdate} = useListView()
   const {query} = useQueryResponse()
   const queryClient = useQueryClient()
@@ -24,7 +24,7 @@ const UserActionsCell: FC<Props> = ({id}) => {
     setItemIdForUpdate(id)
   }
 
-  const deleteItem = useMutation(() => deleteUser(id), {
+  const deleteItem = useMutation(() => deleteBook(id), {
     // 💡 response of the mutation is passed to onSuccess
     onSuccess: () => {
       // ✅ update detail view directly
@@ -73,4 +73,4 @@ const UserActionsCell: FC<Props> = ({id}) => {
   )
 }
 
-export {UserActionsCell}
+export {BookActionsCell}
