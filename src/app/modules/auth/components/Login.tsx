@@ -64,7 +64,7 @@ export function Login() {
     >
       {/* begin::Heading */}
       <div className='text-center mb-10'>
-        <h1 className='text-dark mb-3'>Sign In to Metronic</h1>
+        <h1 className='text-dark mb-3'>Sign In to Reading books tracker</h1>
         <div className='text-gray-400 fw-bold fs-4'>
           New Here?{' '}
           <Link to='/auth/registration' className='link-primary fw-bolder'>
@@ -81,8 +81,8 @@ export function Login() {
       ) : (
         <div className='mb-10 bg-light-info p-8 rounded'>
           <div className='text-info'>
-            Use account <strong>admin@demo.com</strong> and password <strong>demo</strong> to
-            continue.
+            Email: <strong>admin@demo.com</strong><br/>
+            Password: <strong>demo</strong>
           </div>
         </div>
       )}
@@ -172,40 +172,40 @@ export function Login() {
         </button>
 
         {/* begin::Separator */}
-        <div className='text-center text-muted text-uppercase fw-bolder mb-5'>or</div>
+        {/*<div className='text-center text-muted text-uppercase fw-bolder mb-5'>or</div>*/}
         {/* end::Separator */}
 
         {/* begin::Google link */}
-        <a href='#' className='btn btn-flex flex-center btn-light btn-lg w-100 mb-5'>
-          <img
-            alt='Logo'
-            src={toAbsoluteUrl('/media/svg/brand-logos/google-icon.svg')}
-            className='h-20px me-3'
-          />
-          Continue with Google
-        </a>
+        {/*<a href='#' className='btn btn-flex flex-center btn-light btn-lg w-100 mb-5'>*/}
+        {/*  <img*/}
+        {/*    alt='Logo'*/}
+        {/*    src={toAbsoluteUrl('/media/svg/brand-logos/google-icon.svg')}*/}
+        {/*    className='h-20px me-3'*/}
+        {/*  />*/}
+        {/*  Continue with Google*/}
+        {/*</a>*/}
         {/* end::Google link */}
 
         {/* begin::Google link */}
-        <a href='#' className='btn btn-flex flex-center btn-light btn-lg w-100 mb-5'>
-          <img
-            alt='Logo'
-            src={toAbsoluteUrl('/media/svg/brand-logos/facebook-4.svg')}
-            className='h-20px me-3'
-          />
-          Continue with Facebook
-        </a>
+        {/*<a href='#' className='btn btn-flex flex-center btn-light btn-lg w-100 mb-5'>*/}
+        {/*  <img*/}
+        {/*    alt='Logo'*/}
+        {/*    src={toAbsoluteUrl('/media/svg/brand-logos/facebook-4.svg')}*/}
+        {/*    className='h-20px me-3'*/}
+        {/*  />*/}
+        {/*  Continue with Facebook*/}
+        {/*</a>*/}
         {/* end::Google link */}
 
         {/* begin::Google link */}
-        <a href='#' className='btn btn-flex flex-center btn-light btn-lg w-100'>
-          <img
-            alt='Logo'
-            src={toAbsoluteUrl('/media/svg/brand-logos/apple-black.svg')}
-            className='h-20px me-3'
-          />
-          Continue with Apple
-        </a>
+        {/*<a href='#' className='btn btn-flex flex-center btn-light btn-lg w-100'>*/}
+        {/*  <img*/}
+        {/*    alt='Logo'*/}
+        {/*    src={toAbsoluteUrl('/media/svg/brand-logos/apple-black.svg')}*/}
+        {/*    className='h-20px me-3'*/}
+        {/*  />*/}
+        {/*  Continue with Apple*/}
+        {/*</a>*/}
         {/* end::Google link */}
       </div>
       {/* end::Action */}

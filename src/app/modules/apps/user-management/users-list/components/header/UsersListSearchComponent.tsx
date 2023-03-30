@@ -33,8 +33,8 @@ const UsersListSearchComponent = () => {
         <input
           type='text'
           data-kt-user-table-filter='search'
-          className='form-control form-control-solid w-250px ps-14'
-          placeholder='Search Book'
+          className='form-control form-control-solid w-350px ps-14'
+          placeholder='Search By Book Name or its author'
           value={searchTerm}
           onChange={(e) => setSearchTerm(e.target.value)}
         />
