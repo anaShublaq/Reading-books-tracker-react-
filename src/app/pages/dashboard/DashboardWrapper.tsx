@@ -28,29 +28,29 @@ const DashboardPage: FC = () => (
         {/*  chartHeight='200px'*/}
         {/*  strokeColor='#cb1e46'*/}
         {/*/>*/}
-        <div className='row g-6 g-xl-9 mb-6 mb-xl-9'>
-          <div className='col-12 col-sm-12 col-xl'>
-            <Card4
-                icon='/media/svg/files/folder-document.svg'
-                title='Finance'
-                description='7 files'
-            />
-          </div>
-          <div className='col-12 col-sm-12 col-xl'>
-            <Card4
-                icon='/media/svg/files/folder-document.svg'
-                title='Customers'
-                description='3 files'
-            />
-          </div>
-          <div className='col-12 col-sm-12 col-xl'>
-            <Card4
-                icon='/media/svg/files/folder-document.svg'
-                title='CRM Project'
-                description='25 files'
-            />
-          </div>
-        </div>
+        {/*<div className='row g-6 g-xl-9 mb-6 mb-xl-9'>*/}
+        {/*  <div className='col-12 col-sm-12 col-xl'>*/}
+        {/*    <Card4*/}
+        {/*        icon='/media/svg/files/folder-document.svg'*/}
+        {/*        title='Finance'*/}
+        {/*        description='7 files'*/}
+        {/*    />*/}
+        {/*  </div>*/}
+        {/*  <div className='col-12 col-sm-12 col-xl'>*/}
+        {/*    <Card4*/}
+        {/*        icon='/media/svg/files/folder-document.svg'*/}
+        {/*        title='Customers'*/}
+        {/*        description='3 files'*/}
+        {/*    />*/}
+        {/*  </div>*/}
+        {/*  <div className='col-12 col-sm-12 col-xl'>*/}
+        {/*    <Card4*/}
+        {/*        icon='/media/svg/files/folder-document.svg'*/}
+        {/*        title='CRM Project'*/}
+        {/*        description='25 files'*/}
+        {/*    />*/}
+        {/*  </div>*/}
+        {/*</div>*/}
 
         <div className='row g-6 g-xl-9 mb-6 mb-xl-9'>
           <div className='col-12 col-sm-12 col-xl'>

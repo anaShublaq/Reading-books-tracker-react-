@@ -2,6 +2,8 @@
 import React from 'react'
 import {KTSVG} from '../../../../_metronic/helpers'
 import {Card4} from '../../../../_metronic/partials/content/cards/Card4'
+import {Dropdown1} from '../../../../_metronic/partials/content/dropdown/Dropdown1'
+
 
 export function Documents() {
   return (
@@ -58,7 +60,8 @@ export function Documents() {
 
       <div className='row g-6 g-xl-9 mb-6 mb-xl-9'>
         <div className='col-12 col-sm-12 col-xl'>
-          <Card4 icon='/media/svg/files/pdf.svg' title='Project Reqs..' description='3 days ago' />
+          <Card4 icon='/media/svg/files/pdf.svg'
+                 title='Project Reqs..' description='3 days ago' />
         </div>
         <div className='col-12 col-sm-12 col-xl'>
           <Card4 icon='/media/svg/files/doc.svg' title='CRM App Docs..' description='3 days ago' />
