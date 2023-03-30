@@ -20,8 +20,8 @@ export function Documents() {
         {/*    />*/}
         {/*    <input*/}
         {/*      type='text'*/}
-        //       id='kt_filter_search'
-        //       className='form-control form-control-white form-control-sm w-150px ps-9'
+        {/*//       id='kt_filter_search'*/}
+        {/*//       className='form-control form-control-white form-control-sm w-150px ps-9'*/}
         {/*      placeholder='Search'*/}
         {/*    />*/}
         {/*  </div>*/}

@@ -27,6 +27,8 @@ export function AsideMenuMain() {
                     <span className='menu-section text-muted text-uppercase fs-8 ls-1'>DASHBOARD</span>
                 </div>
             </div>
+            <AsideMenuItem to='/dashboard' icon='/media/icons/duotune/layouts/lay007.svg'
+                           title='Home'/>
             <AsideMenuItemWithSub
                 to='/crafted/pages'
                 title='My Books'
