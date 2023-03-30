@@ -1,5 +1,5 @@
 /* eslint-disable jsx-a11y/anchor-is-valid */
-import {FC} from 'react'
+import React, {FC} from 'react'
 import {toAbsoluteUrl, KTSVG} from '../../../helpers'
 import {Dropdown1} from '../dropdown/Dropdown1'
 
@@ -33,7 +33,7 @@ const Card4: FC<Props> = ({icon, title, description}) => {
                         />
                     </button>
 
-                    <Dropdown1 />
+                    <Dropdown1/>
                 </div>
             </div>
             <div className='card-body d-flex justify-content-center text-center flex-column p-8'>
@@ -42,6 +42,19 @@ const Card4: FC<Props> = ({icon, title, description}) => {
                         <img src={toAbsoluteUrl(icon)} alt=''/>
                     </div>
                     <div className='fs-5 fw-bolder mb-2'>{title}</div>
+                    <div className='d-flex align-items-center flex-column mt-10'>
+                        <div className='d-flex justify-content-between w-100 mt-auto mb-2'>
+                            <span className='fw-bold fs-6 text-gray-400'>Compleation</span>
+                            <span className='fw-bolder fs-6'>60%</span>
+                        </div>
+                        <div className='h-5px mx-3 w-100 bg-light mb-3'>
+                            <div
+                                className='bg-success rounded h-5px'
+                                role='progressbar'
+                                style={{width: '60%'}}
+                            ></div>
+                        </div>
+                    </div>
                 </a>
             </div>
         </div>
